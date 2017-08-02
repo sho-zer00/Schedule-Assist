@@ -53,7 +53,7 @@ public class Plan extends AppCompatActivity {
             ContentValues cv = new ContentValues();
             cv.put("date",txtDate.getText().toString());
             cv.put("time",txtTime.getText().toString());
-            cv.put("plan",txtPlan.getText().toString());
+            cv.put("doing",txtPlan.getText().toString());
             cv.put("flag",0);
             db.insert("plans",null,cv);
             Toast.makeText(this,"データの登録に成功しました",

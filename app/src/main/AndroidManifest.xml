@@ -24,6 +24,9 @@
             android:name=".Check"
             android:label="@string/app_name">
         </activity>
+        <activity android:name=".CheckPlanActivity"
+            android:label="@string/app_name">
+        </activity>
     </application>
 
 </manifest>
