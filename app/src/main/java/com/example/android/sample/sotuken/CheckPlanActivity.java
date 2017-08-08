@@ -1,10 +1,14 @@
 package com.example.android.sample.sotuken;
 
+import android.app.DialogFragment;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -23,8 +27,10 @@ public class CheckPlanActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.planlist_layout);
 
+        //データベースに接続
         check = new CheckDataAdapter(this);
         Cursor c = check.getAllList();
+
 
         if(c.moveToFirst()){
             do{
@@ -45,8 +51,18 @@ public class CheckPlanActivity extends AppCompatActivity {
         rv.setLayoutManager(manager);
 
         //アダプターをRecyclerManagerに設定
-        RecyclerView.Adapter adapter = new CheckPlanAdapter(data);
+        CheckPlanAdapter adapter = new CheckPlanAdapter(data);
         rv.setAdapter(adapter);
+
+        //長押しの機能をつける
+        /*
+        adapter.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView parent, View view, int position, long id) {
+
+            }
+        });
+        */
 
     }
 }

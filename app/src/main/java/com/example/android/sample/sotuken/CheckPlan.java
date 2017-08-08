@@ -2,6 +2,7 @@ package com.example.android.sample.sotuken;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 /**
@@ -14,6 +15,7 @@ import android.widget.TextView;
 public class CheckPlan extends RecyclerView.ViewHolder {
 
     //ビューに配置されたウィジェットを保持しておくためのプライベート変数
+    LinearLayout linearLayout;
     View view;
     TextView title;
     TextView time;
@@ -22,6 +24,7 @@ public class CheckPlan extends RecyclerView.ViewHolder {
     public CheckPlan(View itemView){
         super(itemView);
         this.view = itemView;
+        this.linearLayout = (LinearLayout)view.findViewById(R.id.linear01);
         this.title = (TextView)view.findViewById(R.id.TitleText);
         this.time = (TextView)view.findViewById(R.id.UpdateTime);
     }

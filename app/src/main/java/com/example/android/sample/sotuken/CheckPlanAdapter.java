@@ -22,6 +22,10 @@ public class CheckPlanAdapter extends RecyclerView.Adapter<CheckPlan> {
         this.data = data;
     }
 
+    private View.OnLongClickListener longlistener;
+
+    private View.OnClickListener listener;
+
     //ビューホルダーを生成
     //アダプターはこれを利用して、個々のリスト項目を生成して行く
     @Override
@@ -35,11 +39,26 @@ public class CheckPlanAdapter extends RecyclerView.Adapter<CheckPlan> {
     public void onBindViewHolder(CheckPlan holder, int position){
         holder.title.setText(this.data.get(position).getTitle());
         holder.time.setText(this.data.get(position).getTime());
+        holder.linearLayout.setOnLongClickListener(new View.OnLongClickListener(){
+            @Override
+            public boolean onLongClick(View view){
+                longlistener.onLongClick(view);
+                return true;
+            }
+        });
+    }
+
+    public boolean setOnLongClickListener(View.OnLongClickListener longlistener) {
+        this.longlistener = longlistener;
+        return true;
     }
     //データ項目数を取得
     @Override
     public int getItemCount(){
         return this.data.size();
     }
+
+
+
 
 }

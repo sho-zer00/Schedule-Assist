@@ -58,7 +58,8 @@ public class Plan extends AppCompatActivity {
             db.insert("plans",null,cv);
             Toast.makeText(this,"データの登録に成功しました",
                     Toast.LENGTH_SHORT).show();
-        }finally {
+        }
+        finally {
             db.close();
         }
     }
