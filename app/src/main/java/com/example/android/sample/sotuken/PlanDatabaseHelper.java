@@ -21,8 +21,7 @@ public class PlanDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db){
-        db.execSQL("CREATE TABLE "+ TABLE_NAME + "("+
-        "_id INTEGER PRIMARY KEY AUTOINCREMENT, date TEXT NOT NULL, time TEXT NOT NULL, doing TEXT NOT NULL, flag INTEGER);");
+        db.execSQL("CREATE TABLE plans (_id INTEGER PRIMARY KEY AUTOINCREMENT, date TEXT NOT NULL, time TEXT NOT NULL, doing TEXT NOT NULL, flag INTEGER);");
     }
 
     @Override
@@ -31,3 +30,4 @@ public class PlanDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 }
+

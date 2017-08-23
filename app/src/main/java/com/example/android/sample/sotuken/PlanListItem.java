@@ -6,7 +6,7 @@ package com.example.android.sample.sotuken;
 
 public class PlanListItem  {
 
-    private long id = 0;
+    private int id = 0;
     private String title = null;
     private String time = null;
 
@@ -23,7 +23,7 @@ public class PlanListItem  {
     }
 
 
-    public void setId(long id){
+    public void setId(int id){
         this.id = id;
     }
 

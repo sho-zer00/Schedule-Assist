@@ -1,10 +1,14 @@
 package com.example.android.sample.sotuken;
 
 
+import android.app.Activity;
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;//レイアウトファイルからViewオブジェクトを生成するために使用
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -13,52 +17,48 @@ import java.util.ArrayList;
  * CheckPlanのホルダーを使ったアダプタークラスの作成
  */
 
-public class CheckPlanAdapter extends RecyclerView.Adapter<CheckPlan> {
+public class CheckPlanAdapter extends BaseAdapter{
 
     private ArrayList<PlanListItem> data;
+    private Context context = null;
+    private int resource = 0;
+    private LayoutInflater inflater = null ;
 
-    //コンストラクタ(データソースを準備)
-    public CheckPlanAdapter(ArrayList<PlanListItem> data){
+    //コンストラクター(コンテキスト、データソース、レイアウトファイルを指定)
+    public CheckPlanAdapter(Context context, ArrayList<PlanListItem> data ,int resource){
+        //super();
+        this.context = context;
         this.data = data;
+        this.resource = resource;
+        this.inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
     }
 
-    private View.OnLongClickListener longlistener;
-
-    private View.OnClickListener listener;
-
-    //ビューホルダーを生成
-    //アダプターはこれを利用して、個々のリスト項目を生成して行く
-    @Override
-    public CheckPlan onCreateViewHolder(ViewGroup parent, int viewType){
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.planlist_item,parent,false);
-        return new CheckPlan(v);
+    //データ項目の個数を取得
+    public int getCount(){
+        return data.size();
     }
 
-    //ビューにデータを割り当て、リスト項目を生成
-    @Override
-    public void onBindViewHolder(CheckPlan holder, int position){
-        holder.title.setText(this.data.get(position).getTitle());
-        holder.time.setText(this.data.get(position).getTime());
-        holder.linearLayout.setOnLongClickListener(new View.OnLongClickListener(){
-            @Override
-            public boolean onLongClick(View view){
-                longlistener.onLongClick(view);
-                return true;
-            }
-        });
+    //指定された項目を取得
+    public Object getItem(int position){
+        return data.get(position);
     }
 
-    public boolean setOnLongClickListener(View.OnLongClickListener longlistener) {
-        this.longlistener = longlistener;
-        return true;
-    }
-    //データ項目数を取得
-    @Override
-    public int getItemCount(){
-        return this.data.size();
+    //指定された項目を識別するためのid値を取得
+    public long getItemId(int position){
+        return data.get(position).getId();
     }
 
-
-
+    //リスト項目を表示するためのViewを取得
+    public View getView(int position, View convertView, ViewGroup parent){
+        Activity activity = (Activity)context;
+        PlanListItem item = (PlanListItem)getItem(position);
+        if(convertView == null){
+            convertView = activity.getLayoutInflater().inflate(resource,null);
+        }
+        ((TextView) convertView.findViewById(R.id.TitleText)).setText(item.getTitle());
+        ((TextView) convertView.findViewById(R.id.UpdateTime)).setText(item.getTime());
+        return convertView;
+    }
 
 }

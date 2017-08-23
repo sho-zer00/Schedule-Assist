@@ -1,13 +1,19 @@
 package com.example.android.sample.sotuken;
 
+import android.app.AlertDialog;
 import android.app.DialogFragment;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -19,50 +25,60 @@ import java.util.ArrayList;
 
 public class CheckPlanActivity extends AppCompatActivity {
 
+    private CheckPlanAdapter adapter;
     private CheckDataAdapter check;
     private ArrayList<PlanListItem> data = new ArrayList<>();
+    private PlanDatabaseHelper helper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.planlist_layout);
 
+        helper = new PlanDatabaseHelper(this);
         //データベースに接続
         check = new CheckDataAdapter(this);
         Cursor c = check.getAllList();
 
-
+        adapter = new CheckPlanAdapter(this,data,R.layout.planlist_item);
+        final ListView list = (ListView)findViewById(R.id.list);
+        list.setAdapter(adapter);
+        //adapter.notifyDataSetChanged();
+        //データベースの中から項目を取り出す
         if(c.moveToFirst()){
             do{
                 PlanListItem item = new PlanListItem();
+                item.setId(c.getInt(c.getColumnIndex("_id")));
                 item.setTitle(c.getString(c.getColumnIndex("doing")));
                 item.setTime(c.getString(c.getColumnIndex("date")));
                 data.add(item);
+                //adapter.notifyDataSetChanged();
             }while (c.moveToNext());
         }
 
-        RecyclerView rv = (RecyclerView)findViewById(R.id.rv);
+        adapter.notifyDataSetChanged();
+        list.setOnItemClickListener(
+                new AdapterView.OnItemClickListener(){
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position,long id) {
 
-        rv.setHasFixedSize(true);//固定サイズの場合にパフォーマンスを向上
+                        /*
+                        SQLiteDatabase db = helper.getWritableDatabase();
+                        try{
+                            db.delete(helper.TABLE_NAME, "_id = "+ id ,null);
+                            adapter.notifyDataSetChanged();
+                        }finally {
+                            db.close();
+                        }
+                        */
+                        Intent intent = new Intent(getApplication(), CheckPlanSubActivity.class);
+                        //Toast.makeText(CheckPlanActivity.this,"sucess",Toast.LENGTH_SHORT).show();
+                        
 
-        //レイアウトマネージャーの準備
-        LinearLayoutManager manager = new LinearLayoutManager(this);
-        manager.setOrientation(LinearLayoutManager.VERTICAL);
-        rv.setLayoutManager(manager);
-
-        //アダプターをRecyclerManagerに設定
-        CheckPlanAdapter adapter = new CheckPlanAdapter(data);
-        rv.setAdapter(adapter);
-
-        //長押しの機能をつける
-        /*
-        adapter.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView parent, View view, int position, long id) {
-
-            }
-        });
-        */
-
+                    }
+                }
+        );
+        c.close();
     }
+
 }

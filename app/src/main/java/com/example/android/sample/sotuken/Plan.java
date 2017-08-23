@@ -55,7 +55,7 @@ public class Plan extends AppCompatActivity {
             cv.put("time",txtTime.getText().toString());
             cv.put("doing",txtPlan.getText().toString());
             cv.put("flag",0);
-            db.insert("plans",null,cv);
+            db.insertOrThrow("plans",null,cv);
             Toast.makeText(this,"データの登録に成功しました",
                     Toast.LENGTH_SHORT).show();
         }

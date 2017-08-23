@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffacd"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TitleText"
+            android:ellipsize="end"
+            android:textSize="30sp"
+            tools:text="保存されている予定"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/UpdateTime"
+            android:layout_below="@+id/TitleText"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp"
+            tools:text="date"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/yes_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="265dp"
+            android:layout_marginStart="47dp"
+            android:layout_alignBaseline="@+id/no_button"
+            android:layout_alignBottom="@+id/no_button"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/no_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="188dp"
+            android:text="No"
+            tools:layout_editor_absoluteX="245dp"
+            tools:layout_editor_absoluteY="265dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp" />
+
+        <TextView
+            android:id="@+id/QuestionView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/yes_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:text="Delete this plan ?"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+</LinearLayout>
