@@ -3,6 +3,7 @@ package com.example.android.sample.sotuken;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -30,5 +31,22 @@ public class Check extends AppCompatActivity {
             }
         });
 
+        check_button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplication(),PieChartSample.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            Intent intent = new Intent(getApplication(), MainActivity.class);
+            startActivity(intent);
+            return super.onKeyDown(keyCode, event);
+        } else {
+            return false;
+        }
     }
 }

@@ -19,9 +19,10 @@ public class CheckDataAdapter {
         db = helper.getWritableDatabase();
     }
 
-    //リストを取得
+    //全リストを取得
     public Cursor getAllList(){
-        return db.query(PlanDatabaseHelper.TABLE_NAME,null,null,null,null,null,null);
+        String orderStr = "date asc, time asc";
+        return db.query(PlanDatabaseHelper.TABLE_NAME,null,null,null,null,null,orderStr);
     }
 
 }

@@ -65,7 +65,7 @@
             android:layout_above="@+id/yes_button"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="100dp"
-            android:text="Delete this plan ?"
+            android:text="Can you do plan ?"
             android:textSize="30dp" />
     </RelativeLayout>
 
