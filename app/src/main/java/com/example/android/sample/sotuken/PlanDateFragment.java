@@ -11,6 +11,7 @@ import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.Locale;
 
@@ -25,10 +26,10 @@ public class PlanDateFragment extends DialogFragment {
         //今日の日付を準備
         final Calendar cal = Calendar.getInstance();
         return new DatePickerDialog(
-                getActivity(),
+                getActivity(),R.style.DialogTheme,
                 new DatePickerDialog.OnDateSetListener(){
                     public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth){
-                        EditText txtDate = (EditText)getActivity().findViewById(R.id.txtDate);
+                        TextView txtDate = (TextView) getActivity().findViewById(R.id.txtDate);
                         txtDate.setText(String.format(Locale.JAPAN,"%02d/%02d/%02d",year,monthOfYear+1,dayOfMonth));
                     }
                 },

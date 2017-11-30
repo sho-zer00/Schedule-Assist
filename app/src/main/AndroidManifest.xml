@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,36 +17,154 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Plan"
+            android:name=".activity.Plan"
             android:label="Plan">
         </activity>
         <activity
-            android:name=".Check"
+            android:name=".activity.Check"
             android:label="Check">
         </activity>
-        <activity android:name=".CheckPlanActivity"
+        <activity android:name=".activity.CheckPlanActivity"
             android:label="Check">
 
         </activity>
-        <activity android:name=".CheckPlanSubActivity"
+        <activity android:name=".activity.CheckPlanSubActivity"
             android:label="Test Check">
         </activity>
         <activity android:name=".CheckPlanDateSort"
             android:label="Check">
 
         </activity>
-        <activity android:name=".CheckPlanDateActivity"
+        <activity android:name=".activity.CheckPlanDateActivity"
             android:label="Check">
 
         </activity>
-        <activity android:name=".PieChartSample"
-            android:label="PieChartSample">
+        <activity android:name=".activity.Evaluation"
+            android:label="Evaluation_Detail">
 
         </activity>
-        <receiver android:name=".AlarmBroadcastReceiver"
+        <activity android:name=".simpleline.SimpleLine"
+            android:label="Evaluation_Graph">
+
+        </activity>
+        <activity android:name=".activity.EvaluationActivity"
+            android:label="Evaluation">
+
+        </activity>
+        <activity android:name=".activity.EvaluationCheckActivity"
+            android:label="Evaluation-No_List">
+
+        </activity>
+
+        <activity android:name=".EvaluationFlag"
+            android:label="Evaluation">
+
+        </activity>
+        <activity android:name=".anketo.Quiz02Activity"
+            android:label="Question">
+
+        </activity>
+        <activity android:name=".anketo.QuizMain"
+            android:label="Question TOP">
+
+        </activity>
+        <activity android:name=".anketo.Quiz03Activity"
+            android:label="Question">
+
+        </activity>
+        <activity android:name=".anketo.QuizActivity"
+            android:label="Question">
+
+        </activity>
+        <activity android:name=".anketo.QuizAType"
+            android:label="A_Type">
+
+        </activity>
+        <activity android:name=".anketo.QuizBType"
+            android:label="B_Type">
+
+        </activity>
+        <activity android:name=".anketo.QuizCType"
+            android:label="C_Type">
+
+        </activity>
+        <activity android:name=".anketo.QuizDType"
+            android:label="D_Type">
+
+        </activity>
+        <activity android:name=".anketo.QuizEType"
+            android:label="E_Type">
+
+        </activity>
+        <activity android:name=".anketo.QuizFType"
+            android:label="F_Type">
+
+        </activity>
+        <activity android:name=".anketo.QuizGreatActivity"
+            android:label="G_Type">
+
+        </activity>
+        <activity android:name=".anketo.QuizDetailA"
+            android:label="A_Type">
+
+        </activity>
+        <activity android:name=".anketo.QuizDetailB"
+            android:label="B_Type">
+
+        </activity>
+        <activity android:name=".anketo.QuizDetailC"
+            android:label="C_Type">
+
+        </activity>
+        <activity android:name=".anketo.QuizDetailD"
+            android:label="D_Type">
+
+        </activity>
+        <activity android:name=".anketo.QuizDetailE"
+            android:label="E_Type">
+
+        </activity>
+        <activity android:name=".anketo.QuizDetailF"
+            android:label="F_Type">
+
+        </activity>
+        <activity android:name=".anketo.QuizResult"
+            android:label="Result">
+
+        </activity>
+        <activity android:name=".anketo.QuizType"
+            android:label="Type List">
+
+        </activity>
+        <activity android:name=".anketo.QuizLevel"
+            android:label="Level List">
+
+        </activity>
+        <activity android:name=".chat.ChatMain"
+            android:label="Chat">
+
+        </activity>
+        <activity android:name=".chat.ChatRoom"
+            android:label="Chat">
+
+        </activity>
+        <activity android:name=".activity.CheckPlanYesActivity"
+            android:label="Evaluation-Yes_List">
+
+        </activity>
+        <activity android:name=".simpleline.GraphDetailActivity"
+            android:label="Graph_Detail">
+
+        </activity>
+        <receiver android:name=".receiver.AlarmBroadcastReceiver"
             android:process=":remote">
 
         </receiver>
+       <receiver android:name=".receiver.DarakeBroadcastReceiver"
+           android:process=":remote">
+
+       </receiver>
+
     </application>
 
 </manifest>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/shousai"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="計画達成度"
+            android:id="@+id/SimpleTitle"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_achi"
+            android:text="0"
+            android:gravity="center_horizontal"
+            android:textSize="45sp"
+            android:layout_below="@+id/SimpleTitle"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登録日時"
+            android:id="@+id/SimpleTouroku"
+            android:textSize="20sp"
+            android:layout_below="@+id/item_achi"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/touroku"
+            android:layout_below="@+id/SimpleTouroku"
+            android:text="yyyy/MM/dd"
+            android:gravity="right"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

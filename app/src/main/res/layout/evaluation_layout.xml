@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffacd"
+    android:gravity="center">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:textSize="30sp"
+            android:text="今日の日付" />
+
+        <TextView
+            android:id="@+id/Data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:textSize="30sp"
+            android:text="データ数" />
+
+        <TextView
+            android:id="@+id/Data_kazu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.07"
+            android:ems="15"
+            android:text="0"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/Flag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="実行できた数"
+            android:textSize="30sp"
+            android:layout_weight="0.10" />
+
+
+        <TextView
+            android:id="@+id/Flag_kazu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.22"
+            android:ems="15"
+            android:text="0"
+            android:textSize="70sp" />
+
+
+        <TextView
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Tasseiritu"
+            android:textSize="30sp"
+            android:text="達成率"
+            android:layout_weight="0.05" />
+
+        <TextView
+            android:id="@+id/do_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.13"
+            android:ems="15"
+            android:text="0"
+            android:textSize="70sp" />
+
+        <Button
+            android:id="@+id/graph_input"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="データを登録" />
+
+
+    </LinearLayout>
+</RelativeLayout>

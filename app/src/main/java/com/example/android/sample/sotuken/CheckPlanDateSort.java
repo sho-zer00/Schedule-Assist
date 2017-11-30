@@ -12,6 +12,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.android.sample.sotuken.activity.Check;
+import com.example.android.sample.sotuken.activity.CheckPlanActivity;
+import com.example.android.sample.sotuken.activity.CheckPlanDateActivity;
+
 import java.util.ArrayList;
 
 /**

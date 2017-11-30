@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fffacd"
-    tools:context="com.example.android.sample.sotuken.MainActivity">
+    tools:context="com.example.android.sample.sotuken.activity.MainActivity">
 
 
     <RelativeLayout
@@ -16,35 +16,37 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
             android:text="MakePlan"
             tools:layout_editor_absoluteX="51dp"
             tools:layout_editor_absoluteY="265dp"
-            android:layout_marginStart="36dp"
-            android:layout_alignBaseline="@+id/button2"
-            android:layout_alignBottom="@+id/button2"
-            android:layout_alignStart="@+id/textView" />
+            android:layout_below="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginStart="16dp" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="209dp"
+            android:layout_marginEnd="29dp"
             android:text="Check"
             tools:layout_editor_absoluteX="245dp"
             tools:layout_editor_absoluteY="265dp"
-            android:layout_marginEnd="32dp"
-            android:layout_alignParentBottom="true"
+            android:layout_alignBaseline="@+id/button"
+            android:layout_alignBottom="@+id/button"
             android:layout_alignEnd="@+id/textView" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/button"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="100dp"
-            android:text="Schedule Check"
-            android:textSize="50dp" />
+            android:layout_marginTop="83dp"
+            android:text="Schedule Assist"
+            android:textSize="40dp" />
+
+
 
     </RelativeLayout>
 

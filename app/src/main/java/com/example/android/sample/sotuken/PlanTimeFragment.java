@@ -6,6 +6,7 @@ import android.app.TimePickerDialog;
 import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.TimePicker;
 
 import java.util.Locale;
@@ -21,11 +22,11 @@ public class PlanTimeFragment extends DialogFragment{
         //現在の時刻を準備
         final Calendar cal = Calendar.getInstance();
         return new TimePickerDialog(
-                getActivity(),
+                getActivity(),R.style.TimePicker,
                 new TimePickerDialog.OnTimeSetListener(){
                     //選択された時刻をテキストボックスに反映
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute){
-                        EditText txtTime = (EditText)getActivity().findViewById(R.id.txtTime);
+                        TextView txtTime = (TextView) getActivity().findViewById(R.id.txtTime);
                         txtTime.setText(
                                 String.format(Locale.JAPAN,"%02d:%02d",hourOfDay,minute));
                     }

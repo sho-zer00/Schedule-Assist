@@ -12,7 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        >
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
         <Button
             android:id="@+id/dateButton"
@@ -21,27 +23,31 @@
             android:onClick="date_onClick"
             android:text="日付入力" />
 
-        <EditText
+        <TextView
             android:id="@+id/txtDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="15"
-            android:inputType="date" />
+            android:inputType="date"
+            android:textSize="35sp"
+            android:layout_weight="0.06" />
 
         <Button
             android:id="@+id/timeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="time_onClick"
-            android:text="時刻入力" />
+            android:text="時間入力" />
 
 
-        <EditText
+        <TextView
             android:id="@+id/txtTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems = "15"
-            android:inputType="time"/>
+            android:textSize="35sp"
+            android:inputType="time"
+            android:layout_weight="0.06" />
 
 
         <Button
@@ -49,13 +55,14 @@
             android:layout_height="wrap_content"
             android:id="@+id/do_Button"
             android:onClick="do_Button"
-            android:text="やる事を入力"/>
+            android:text="計画入力"/>
 
         <EditText
             android:id="@+id/txtPlan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="15"
+            android:textSize="35sp"
             android:inputType="text" />
 
 
@@ -65,6 +72,7 @@
             android:text="登録"
             android:layout_gravity="center"
             android:onClick="input_Button"/>
+
 
 
     </LinearLayout>>

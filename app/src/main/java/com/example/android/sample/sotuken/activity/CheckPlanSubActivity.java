@@ -1,4 +1,4 @@
-package com.example.android.sample.sotuken;
+package com.example.android.sample.sotuken.activity;
 
 import android.content.ContentValues;
 import android.content.Intent;
@@ -11,6 +11,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.android.sample.sotuken.PlanDatabaseHelper;
+import com.example.android.sample.sotuken.R;
 
 /**
  * Created by sho on 2017/08/23.
@@ -66,6 +69,7 @@ public class CheckPlanSubActivity extends AppCompatActivity {
             db.close();
         }
 
+
         //yes_buttonが呼ばれた時
         yes_button.setOnClickListener(
                 new View.OnClickListener() {
@@ -95,6 +99,11 @@ public class CheckPlanSubActivity extends AppCompatActivity {
                     }
                 }
         );
+
+
+        //finish();
+
+
     }
 
 }

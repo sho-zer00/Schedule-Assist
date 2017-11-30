@@ -9,11 +9,11 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="163dp">
+        android:layout_height="wrap_content">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/TitleText"
+            android:id="@+id/DetailTitleText"
             android:ellipsize="end"
             android:textSize="50sp"
             tools:text="保存されている予定"/>
@@ -21,8 +21,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/UpdateTime"
-            android:layout_below="@+id/TitleText"
+            android:id="@+id/DetailUpdateTime"
+            android:layout_below="@+id/DetailTitleText"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:textColor="@android:color/darker_gray"
@@ -39,33 +39,31 @@
             android:id="@+id/yes_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/no_button"
-            android:layout_alignBottom="@+id/no_button"
-            android:layout_marginEnd="17dp"
-            android:layout_toStartOf="@+id/QuestionView"
             android:text="Yes"
             tools:layout_editor_absoluteX="51dp"
-            tools:layout_editor_absoluteY="265dp" />
+            tools:layout_editor_absoluteY="265dp"
+            android:layout_marginTop="97dp"
+            android:layout_below="@+id/QuestionView"
+            android:layout_alignStart="@+id/QuestionView" />
 
         <Button
             android:id="@+id/no_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/QuestionView"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="61dp"
-            android:layout_toEndOf="@+id/QuestionView"
             android:text="No"
             tools:layout_editor_absoluteX="245dp"
-            tools:layout_editor_absoluteY="265dp" />
+            tools:layout_editor_absoluteY="265dp"
+            android:layout_alignBaseline="@+id/yes_button"
+            android:layout_alignBottom="@+id/yes_button"
+            android:layout_alignEnd="@+id/QuestionView" />
 
         <TextView
             android:id="@+id/QuestionView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="72dp"
-            android:text="Start ??"
+            android:text="Did you do plan ?"
             android:textSize="36dp"
+            android:layout_marginTop="98dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
     </RelativeLayout>

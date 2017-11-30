@@ -1,4 +1,4 @@
-package com.example.android.sample.sotuken;
+package com.example.android.sample.sotuken.receiver;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -7,8 +7,10 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.NotificationCompat;
-import android.widget.Toast;
 import android.util.Log;
+
+import com.example.android.sample.sotuken.R;
+import com.example.android.sample.sotuken.activity.CheckPlanSubActivity;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -27,7 +29,8 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
 
         Log.d("AlarmBroadcastReceiver","onReceive() pid=" + android.os.Process.myPid());
 
-        int bid = intent.getIntExtra("intentId",0);
+        int bid = intent.getIntExtra("intentId",100);
+
         DateFormat df = new SimpleDateFormat("yyyy/MM/dd HH:mm");
         Date call_time = new Date(System.currentTimeMillis());
         String date = df.format(call_time);
@@ -49,14 +52,19 @@ public class AlarmBroadcastReceiver extends BroadcastReceiver {
                 .setContentText("あなたが指定したスケジュールの時間になりました")
                 // 音、バイブレート、LEDで通知
                 .setDefaults(Notification.DEFAULT_ALL)
-                // 通知をタップした時にMainActivityを立ち上げる
+                // 通知をタップした時にActivityを立ち上げる
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
                 .build();
 
         // 古い通知を削除
-        //notificationManager.cancelAll();
+        notificationManager.cancelAll();
         // 通知
         notificationManager.notify(R.string.app_name, notification);
+
+        //この先にもう一度アラームを登録する機能をつける関数作成
+
     }
+
+
 }
