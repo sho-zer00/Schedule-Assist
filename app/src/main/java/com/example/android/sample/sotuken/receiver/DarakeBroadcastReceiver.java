@@ -10,7 +10,6 @@ import android.support.v7.app.NotificationCompat;
 import android.util.Log;
 
 import com.example.android.sample.sotuken.R;
-import com.example.android.sample.sotuken.activity.CheckPlanSubActivity;
 import com.example.android.sample.sotuken.activity.MainActivity;
 
 /**
