@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffacd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="私たちが体を動かす時には、ほとんどが何気なく行動していますが、実は脳はそれぞれの筋肉や関節から常に感覚情報を集めており、動作もそれに基いて指示されています。"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="普段の動きを集めて記憶しておくことで、特に新しく体の動きを計画しなくても体をいつもと同じように動かすことができるのです。それがクセや習慣と言われる体の動きです。"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#4f071c"
+            android:text="どうしてクセや習慣が作られるのか。それは、脳が全ての行動に対して筋肉から情報を集めて計画を立てていると、多大なエネルギーを消費してしまうからです。"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新しい動きをすれば筋肉はまた新しい情報を脳に届けます。そして脳がそれに反応してまた新しい情報を脳に送ります。脳がそれに反応して、また新しい動きを指示して、、とこのサイクルを常にフル稼働してしまうと脳が疲労してしまいます。"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="するとすぐにやらなきゃいけない場面でもとっさに脳が体の動かし方を計画できなくなります。何気ない場面でエネルギーを使いすぎたのです。その結果体が動かなくなってしまい、計画がうまくいかず、だらけてしまう状況を作り出してしまいます。"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ですのでこのタイプに当てはまった人は「脳の省エネ」が必要になります。"
+            android:textSize="20sp"
+            android:textColor="#4f071c"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="つまりは「いつも通り」にいることが重要なのです。"
+            android:textSize="20sp"
+            android:textColor="#4f071c"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="私たちの感覚としては普段と違うことをしていても、「新しい動きをしている」感じはしないかもしれません。\n\nしかし、脳の観点からすると、出勤前に気分を変えて持っていくカバンを変えた、というそれだけでも、新しい体の動きを計画しなければいけない「エネルギーの消耗」を伴います。カバンの持ち手にどのぐらい力を入れるか、カバンを持った手をどの程度振って歩くかという感じで、体の動きが新しくなるのです。"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="カバンが変わったことで、歩くときの体の傾きが変わり、人混みにぶつかってしまう経験はないでしょうか？その度に脳は新しいカバンで今まで通りに人混みをすり抜けられる体の動きを作ることにエネルギーを注いでいるのです。"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="長くなりましたが、このタイプに当てはまった人は、計画どおりに行動する脳を保つために日常の生活を限りなくルーチンにするためにも、毎日同じ計画を立てていき、筋肉が脳に新しい情報を届けないでも済むようにしてあげましょう。"
+            android:textSize="20sp"
+            android:textColor="#4f071c"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="そうすれば特殊なことが起きてもスムーズにスケジュールどおりに動けることができるはずです。"
+            android:textSize="20sp"/>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

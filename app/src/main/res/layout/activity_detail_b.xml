@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffacd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="例えば、パソコンでデータの入力をしていても、とりあえず入力して間違えたら拾い直す場合と間違えないようにする場合でも正しくできれば、結果は同じですね。"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="しかし、自己裁量で行う仕事、行動の結果が読めない状況になると前者と後者では圧倒的な違いが出ます。"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="「決められた状況を打開しよう、自分らしい仕事をしよう」と思った時、特に役立つのが後者の考え方、フィードフォワード型の脳の仕組みなのです。"
+            android:textColor="#4286f4"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ではそんなフィードフォワード型の脳の動きにするためにはどうすればいいでしょうか。"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="それは、脳が「次の行動」を予測できるところまでは「前の行動」を途切れさずに連続させることです。"
+            android:textColor="#4286f4"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="脳が予測を立てるには現状と将来像との関係を知らなければならないからです。次の作業にちょっとだけ手をつければ今の自分が置かれた状況と目指すものとの関係がより明らかになります。現状と将来像との大まかな繋がりに法則性を見出すことが、脳がフィードフォワードを働かせるための材料となります。"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="なので資格にチャレンジするときなど「いつもと違う」状況にある時こそちょっとだけ手をつけてから行動を区切ることを意識しましょう。"
+            android:textSize="20sp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 例えるなら、もし英語の勉強の次は数学の勉強をするという計画を立てていたら、英語の勉強をする時間に数学の勉強をする時間を終わりに5分とるという感じです。"
+            android:textSize="20sp"
+            android:textColor="#4286f4"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="最初は「次の作業に手をつけよう」と強く意識することになりますが、次第に自然と作業に取りかかれるように、スケジュール通り行動できるようになるはずです。"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</ScrollView>

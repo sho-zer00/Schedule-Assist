@@ -176,6 +176,7 @@ public class MainActivity extends AppCompatActivity {
         //できているか確認のためのコード
         Log.d("number_check", "" + year + "," + month + "," + day + "," + hour + "," + minute);
         //アラームに登録
+        //一応三日後を想定だが今はしない
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, year);
         calendar.set(Calendar.MONTH, month);

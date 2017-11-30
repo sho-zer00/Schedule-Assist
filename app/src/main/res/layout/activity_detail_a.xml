@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffacd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="例えば、初対面の人と会ったとしましょう。私たちは無意識のうち 「相手がどのような人か」を判断します。「メラビアンの法則」によるとその判断に与える影響は視覚が５５パーセント、聴覚が３８パーセント、言葉が７パーセントと言われています。"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="相手がどんなに立派なことを言っていても見た目が伴っていなければ私たちはその人のことを信用しなくなります。見てしまったもの、つまり脳に見せてしまったものは覆せないのです。"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#f45f42"
+            android:text="つまり「１度脳に見せてしまったらもう逆らえない」のです。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="ですので、スマホ、テレビ、パソコンを前にして「少しだけ見て、それからやろう」は手遅れなのです。あなたはすでに「問題」の中にいます。なので、この問題を解決するためには必要のないものは必要でないときに見ないことを徹底する必要があります。"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="このタイプに当てはまったあなたはもし自分の身近なものを置く定位置を決めていなければ決めることから始めて見ましょう。"
+            android:textColor="#f45f42"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="スケジュール管理に入る前にその少しだけ〜精神をなくす訓練をしていくことが今のあなたには必要です。"/>
+
+    </LinearLayout>
+
+</ScrollView>

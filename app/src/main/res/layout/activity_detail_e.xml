@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffacd">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="突然ですが、最近あなたは次のような感触のものにどれだけ触っていますか？"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ゴツゴツ、サラサラ、もちもち、ザラザラ、ガサガサ、ベタベタ、どろどろ、"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#f4418b"
+            android:text="子供の頃、私たちはたくさんの情報を「触覚」から得ていました。しかし大きくなるにつれてこのような様々な「触り心地」を体験することは減っています。"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f4418b"
+            android:text="毎日の生活に追われていると、その中で体験できる触覚はどんどん乏しくなっていきます。しかし、この触覚もまた、脳の「やる気」と関わる重要な感覚です。感じられる触覚が少なくなると、脳はやる気になりにくく、「すぐにやる」ことや「継続してやり続ける」ことが難しくなってしまいいわゆる三日坊主になってしまいます。"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ディジタルコンテンツが発達している今、色々な情報が出回っているからこそ情報に流されてしまい、みたり聞いたりしてしまうだけになってしまします。ですがそれだけでは脳は実際に試したらどうなるのかが予測できずストレスを感じ、あれこれ言い訳を重ねて脳が結局やらないという選択をしてしまいます。"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="しかし、この逆の場合どうなるでしょう？実際に触れることで触覚からの豊かな情報が得れれば、脳からストレスが消え、感じたことを素直に信じることができ、「やってみる」「継続できる」ようになるのです。"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ですので、自分が少しでも気になることは積極的に取り組み、今まで以上にやったこのないことを多くしましょう。脳が刺激され、三日坊主ではなくなり、ダラダラすることが減っていき、継続できる力、スケジュール通りに動く力がついてくるのではないでしょうか？期待しています！"
+            android:textSize="20sp"
+            android:textColor="#f4418b"/>
+
+    </LinearLayout>
+
+</ScrollView>

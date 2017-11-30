@@ -15,6 +15,7 @@ import com.example.android.sample.sotuken.activity.MainActivity;
 
 /**
  * Created by sho on 2017/11/30.
+ * 三日坊主防止のための工夫
  */
 
 public class DarakeBroadcastReceiver extends BroadcastReceiver {

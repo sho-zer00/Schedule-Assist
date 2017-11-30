@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffacd">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="普段意識されることはありませんが、私たちの脳内には実はあらかじめ用意されている「文法」があります。人の話を聞いた時、脳内では一言一句漏らさずに聞き取って理解しようとしているのではなく、相手の話からキーワードだけを拾って用意してあった文法に当てはめて理解しているのです。これは、自分の脳内だけにある文法で、「メンタル文法」と呼ばれます。"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="受験生の前で「落ちるは禁句」みたいな話も「メンタル文法」に由来しています。追い込まれている状況ではマイナスな言葉は過敏になってしまうのです。"
+            android:textSize="20sp"
+            android:textColor="#6141f4"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="また、うつ病の人の脳は、ネガティブな言葉に強く反応を示します。脳に「ネガティブなメンタル文法」が作られているので、話の中でネガティブな言葉だけを脳が選択して拾ってしまいます。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="つまり、私たちの気分は気づかないうちにかなり、脳内の「メンタル文法」に振り回されているのです。"
+            android:textColor="#6141f4"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="そしてこの状況がだらけを作り、計画を乱す状況を作り出す要因になるとも言えます。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="ですので、どんな状況でもやるべきことを実行できるように「メンタル文法」を書き換えていきましょう。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="第一に自分の体が自然に動く状態になっている時の言葉、モチベーションの源泉となるキーワードを見つけることです。例えば「褒められる」「人のため」などの言葉で、やる気に火がつく人もいるでしょう。「これは許せない」「負けられない」など、一見ネガティブな言葉が動機になることもあるでしょう。あなた自身のその気にさせる条件は他人と異なるので、取り繕わず素直な気持ちで探してみてください。"
+            android:textColor="#6141f4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="第二にキーワードが見つかったら今度はそれを口に出しながら紙に書いてください。そしてしばらく眺めてみましょう。いかがでしょうか？しっくりきましたでしょうか？"
+            android:textColor="#6141f4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="第三にしっくりきましたらその言葉の後にすぐやる子くっつけて口に出してみましょう、\n「『人のため』ならすぐやる」、「『頼られた』らすぐやる」、というように「自分の体がすぐに動く状態＋すぐやる」という文法を作ります。こうすると、「自分の体がすぐに動く状態」と「すぐやる状態」が脳の中で結合されてひとかたまりの群となり、新しい「メンタル文法」になります。"
+            android:textColor="#6141f4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="この文法の材料はもともとあなたのモチベーションが沸き起こり、体が動く言葉なので、出来上がった「メンタル文法」はかなり高頻度で使われるはずです。"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="そしてあなたの脳は、モチベーションを刺激される状況を待ち構えてスタンバイするようになり、徐々にマイナス思考が改善され、スムーズに取りかかれるはずです。"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="最初は、やることを終えたら次やることの前に気持ちをリセットをし、メンタル文法を唱える時間をとってみましょう。"
+            android:textSize="20sp"
+            android:textColor="#6141f4"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="次第ではありますが、手応えを感じれたら幸いです。"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffacd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eタイプのあなたは、"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="刺激が足りず、三日坊主になってしまう"
+            android:textColor="#f4418b"
+            android:textSize="30sp"
+            android:layout_weight="0.03" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="のではないでしょうか。"
+            android:gravity="right"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="そんなあなたは、、"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="やったことない色々な計画を立てましょう"
+            android:textSize="30sp"
+            android:textColor="#f4418b"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="さらに詳細を見る"
+            android:id="@+id/e_type_button"
+            android:layout_weight="0.00" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "492537445732",
+    "firebase_url": "https://sotuken-c5a10.firebaseio.com",
+    "project_id": "sotuken-c5a10",
+    "storage_bucket": "sotuken-c5a10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492537445732:android:3f859f08eff3d0c6",
+        "android_client_info": {
+          "package_name": "com.example.android.sample.sotuken"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492537445732-l4mnb4qj7gn333e9u4pq27leh5ra4kb1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATi6oCyQ2PdxFovhVWXKbnF67_vPshf-c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffacd">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="あなたは最近、身の回りであった出来事を誰かに話せていますか？話す機会が少なかったらできるだけその機会を作る仕様にしましょう！"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="といきなり言われもなんで？と思われる方が多いとおもいます。でも理由があります。"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="体験したことを話す、すると脳は自信が体験したことの情報をより鮮明な感覚と共に保存することができます。海外旅行などそのあとの価値観に影響を与えるような貴重な体験をした時と同じようなことが脳内では起こるわけです。"
+            android:textColor="#378908"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="反対に、体験したことを話さずにいると、脳内では体験の情報が曖昧なまま保存されます。記憶としては保存されていても、言葉というインデックスがついていないので、思い出されることはありません。体験を言葉にしないということは非常にもったいないことなのです。"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="そこで、客観的な話に自分なりに感じたことや体の様子を付け加えて話してみましょう。「プレゼンで緊張して、肩に力が入っちゃたよー」というように体の様子を言葉で表現することであなたの脳はその体ならば次はどう動けば良いのかをシミュレーションしやすくなるのです。"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="スケジュール管理に移る前に意識的に雑談をする機会を増やし、脳に次の動きを準備させていく準備体操をしましょう。それがダラケを減らすこと、スケジュール通りに行動することに繋がるはずです。\n\n雑談は、楽しみながらだらけをなくせる大切なツールです！"
+            android:textSize="20sp"
+            android:textColor="#378908"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
