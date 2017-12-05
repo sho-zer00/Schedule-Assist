@@ -19,25 +19,25 @@
         </activity>
         <activity
             android:name=".activity.Plan"
-            android:label="Plan">
+            android:label="Make Plan">
         </activity>
         <activity
             android:name=".activity.Check"
             android:label="Check">
         </activity>
         <activity android:name=".activity.CheckPlanActivity"
-            android:label="Check">
+            android:label="Plan Check">
 
         </activity>
         <activity android:name=".activity.CheckPlanSubActivity"
             android:label="Test Check">
         </activity>
         <activity android:name=".CheckPlanDateSort"
-            android:label="Check">
+            android:label="Plan Check-Date">
 
         </activity>
         <activity android:name=".activity.CheckPlanDateActivity"
-            android:label="Check">
+            android:label="Plan Check-Date">
 
         </activity>
         <activity android:name=".activity.Evaluation"

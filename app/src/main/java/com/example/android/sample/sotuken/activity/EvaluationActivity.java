@@ -7,12 +7,15 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.android.sample.sotuken.PlanDatabaseHelper;
 import com.example.android.sample.sotuken.R;
+import com.example.android.sample.sotuken.chat.ChatMain;
 import com.example.android.sample.sotuken.simpleline.SimpleLine;
 import com.example.android.sample.sotuken.simpleline.SimpleLineDatabaseHelper;
 import com.example.android.sample.sotuken.anketo.QuizMain;
@@ -104,18 +107,6 @@ public class EvaluationActivity extends AppCompatActivity {
                 long recodeCount = DatabaseUtils.queryNumEntries(db2,SimpleLineDatabaseHelper.TABLE_NAME,null,null);
                 SQLiteDatabase db = helper.getReadableDatabase();
                 Log.d("recordCount",":"+recodeCount);
-                /*
-                if(recodeCount > 6){
-                    Log.d("date",": "+date3);
-                    int graph_date = Integer.parseInt(date3);
-                    int graph_date01 = graph_date - 7;
-                    String date_graph = String.valueOf(graph_date01);
-                    Log.d("date_graph",": "+date_graph);
-                    String[] params = {date_graph};
-                    db2.delete(helper2.TABLE_NAME,"date <= ?",params);
-                    Log.d("delete","削除されました");
-                }
-                */
 
                 if (recodeCount >=1 ){
                     //Toast.makeText(EvaluationActivity.this, "データ数が少ないです。", Toast.LENGTH_SHORT).show();
@@ -146,6 +137,31 @@ public class EvaluationActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.evaluation_change, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.main:
+                Intent intent1 = new Intent(getApplication(),MainActivity.class);
+                startActivity(intent1);
+                break;
+            case R.id.check:
+                Intent intent2 = new Intent(getApplication(),Check.class);
+                startActivity(intent2);
+                break;
+            case R.id.chat:
+                Intent intent3 = new Intent(getApplication(),ChatMain.class);
+                startActivity(intent3);
+                break;
+        }
+        return true;
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {

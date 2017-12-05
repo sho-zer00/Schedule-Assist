@@ -4,11 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 import com.example.android.sample.sotuken.PlanDatabaseHelper;
 import com.example.android.sample.sotuken.R;
+import com.example.android.sample.sotuken.chat.ChatMain;
 
 /**
  * Created by sho on 2017/07/26.
@@ -46,6 +49,31 @@ public class Check extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.check_change, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.main:
+                Intent intent1 = new Intent(getApplication(),MainActivity.class);
+                startActivity(intent1);
+                break;
+            case R.id.evaluation:
+                Intent intent2 = new Intent(getApplication(),EvaluationActivity.class);
+                startActivity(intent2);
+                break;
+            case R.id.chat:
+                Intent intent3 = new Intent(getApplication(),ChatMain.class);
+                startActivity(intent3);
+                break;
+        }
+        return true;
     }
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {

@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView textView;
     private AlarmDatabaseHelper helper;
     private PlanDatabaseHelper helper2;
-    private static final int bid2 = 300;
-    private static final int bid3 = 300;
+    private static final int bid2 = 30;
+    private static final int bid3 = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -167,12 +167,15 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < array_time.length; i++) {
             Log.d("split", "array_time[" + i + "] = " + array_time[i]);
         }
+
         //数値変換
         int year = Integer.parseInt(array_date[0]);
         int month = Integer.parseInt(array_date[1]) - 1;
         int day = Integer.parseInt(array_date[2]);
-        int hour = Integer.parseInt(array_time[0]);
-        int minute = Integer.parseInt(array_time[1])+ 5;
+        int hour = Integer.parseInt(array_time[0])+5;
+        //int hour = 26;
+        int minute = Integer.parseInt(array_time[1]);
+
         //できているか確認のためのコード
         Log.d("number_check", "" + year + "," + month + "," + day + "," + hour + "," + minute);
         //アラームに登録
@@ -188,36 +191,46 @@ public class MainActivity extends AppCompatActivity {
         //calendar.set(Calendar.AM_PM,timeZone);
         // アラームをセットする
         AlarmManager am = (AlarmManager) MainActivity.this.getSystemService(ALARM_SERVICE);
+
         //過去に必要なくなったアラームを削除
         for (int requestCode = 0; requestCode < bid3; requestCode++) {
             Intent intent02 = new Intent(getApplicationContext(), DarakeBroadcastReceiver.class);
             PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(), requestCode, intent02, 0);
-
             pendingIntent.cancel();
             am.cancel(pendingIntent);
         }
+
+        //定期感覚でセットしていく
         Intent intent02 = new Intent(getApplicationContext(), DarakeBroadcastReceiver.class);
         intent02.putExtra("intentId01", 100);
         PendingIntent pending = PendingIntent.getBroadcast(getApplicationContext(), bid3, intent02, 0);
         am.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pending);
         //Toast.makeText(getApplicationContext(), "ALARM ", Toast.LENGTH_SHORT).show();
-        Log.d("darake_main", date+ "が登録されました");
+        Log.d("darake_main", "" + year + "/" + month + "/" + day + " " + hour + ":" + minute);
 
 
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.chat, menu);
+        getMenuInflater().inflate(R.menu.main_change, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
+            case R.id.check:
+                Intent intent1 = new Intent(getApplication(),Check.class);
+                startActivity(intent1);
+                break;
+            case R.id.evaluation:
+                Intent intent2 = new Intent(getApplication(),EvaluationActivity.class);
+                startActivity(intent2);
+                break;
             case R.id.chat:
-                Intent intent = new Intent(getApplication(),ChatMain.class);
-                startActivity(intent);
+                Intent intent3 = new Intent(getApplication(),ChatMain.class);
+                startActivity(intent3);
                 break;
         }
         return true;
